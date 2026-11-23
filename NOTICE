@@ -1,0 +1,7 @@
+Copyright 2026 Kobold Pool. MIT License (see LICENSE).
+
+The stratum dialect and the share rule follow how rieMiner and StellaPool behave (both GPL-3, by the Riecoin
+team: https://github.com/RiecoinTeam). Their code was read for behaviour only; no code was copied from them.
+tests/data holds real Riecoin mainnet blocks and shares produced by rieMiner, used as test vectors.
+
+Rust dependencies: sha2, serde_json, num-bigint, num-traits, num-integer (all MIT or Apache-2.0).

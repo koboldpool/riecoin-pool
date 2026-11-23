@@ -1,0 +1,12 @@
+[Unit]
+Description=Riecoin pool payouts (PPLNS credit + pay balances >= 1 RIC)
+After=riecoin-node.service
+Requires=riecoin-node.service
+
+[Service]
+Type=oneshot
+User=kobold
+Group=kobold
+WorkingDirectory=/srv/kobold/coins/riecoin
+# The wallet passphrase stays in .wallet-pass (mode 600, owner kobold); payout.py reads it with --passphrase-file.
+ExecStart=/usr/bin/python3 /srv/kobold/coins/riecoin/payout.py --network mainnet --data /srv/kobold/coins/riecoin/pool-data --cookie /srv/kobold/coins/riecoin/node/.cookie --wallet pool --passphrase-file /srv/kobold/coins/riecoin/.wallet-pass --min 1 --pay

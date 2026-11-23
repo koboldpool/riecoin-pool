@@ -1,0 +1,20 @@
+[Unit]
+Description=Kobold Pool Riecoin engine (riecoin-pool, stratum 3540 PPLNS / 3550 solo)
+After=riecoin-node.service
+Requires=riecoin-node.service
+
+[Service]
+User=kobold
+Group=kobold
+WorkingDirectory=/srv/kobold/coins/riecoin
+# POOL_ADDRESS: the address wallet-create.py printed.
+ExecStart=/srv/kobold/coins/riecoin/bin/riecoin-pool --network mainnet --address POOL_ADDRESS --cookie /srv/kobold/coins/riecoin/node/.cookie --data /srv/kobold/coins/riecoin/pool-data --listen 0.0.0.0:3540 --listen-solo 0.0.0.0:3550
+Restart=always
+RestartSec=10
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/srv/kobold/coins/riecoin/pool-data
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+[package]
+name = "riecoin-pool"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Kobold Pool's Riecoin (RIC) mining pool: rieMiner's stratum, Stella k-share checks, PPLNS and solo"
+
+[dependencies]
+sha2 = "0.10"
+serde_json = "1"
+num-bigint = "0.4"
+num-traits = "0.2"
+num-integer = "0.1"
+
+[lib]
+name = "riecoin_pool"
+path = "src/lib.rs"
+
+[[bin]]
+name = "riecoin-pool"
+path = "src/main.rs"
+
+[profile.release]
+debug = false
+codegen-units = 1
+lto = true

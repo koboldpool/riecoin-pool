@@ -1,0 +1,135 @@
+Riecoin Core starting
+node up, height 0
+pool rric1q8nzr4z4mdml5wn2yyemzkp79lw03u4z2fhsunt alice rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n bob rric1q9dau9nuqlx6mnn77vw0kvu0jtcry7x3lmyj6gq
+--- phase 1: alice (PPLNS, 2 workers) and bob (solo)
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+done: sent 15, accepted 8, rejected 7
+rejected: [21,"stale job: the chain has a new block",null]
+rejected: [21,"stale job: the chain has a new block",null]
+done: sent 15, accepted 7, rejected 8
+done: sent 25, accepted 10, rejected 15
+--- phase 2: alice mines on to maturity (100 confirmations)
+done: sent 115, accepted 115, rejected 0
+found events: 140
+accepted by the node: 138
+refused by the node: 2
+chain height 138
+accepted blocks on the best chain: 138 of 138
+coinbase scriptSig: 5108ac446d9e010000000c2f4b6f626f6c64506f6f6c2f -> b'/KoboldPool/'
+coinbase outputs: [(50.0, 'witness_v0_keyhash'), (0.0, 'nulldata')]
+modes: {'pplns': 132, 'solo': 8}
+--- payouts
+block 1 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 2 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 3 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 4 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 5 credited (solo, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 6 credited (solo, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 7 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 8 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 9 credited (solo, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 10 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 11 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 12 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 13 credited (solo, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 14 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 15 credited (solo, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 16 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 17 credited (solo, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 18 credited (solo, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 19 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 20 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 21 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 22 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 23 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 24 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 25 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 26 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 27 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 28 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 29 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 30 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 31 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 32 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 33 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 34 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 35 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 36 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 37 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 38 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+tip 138; 38 blocks credited; 2 balances due (>= 1.0 RIC); owed in total 1900.00000000 RIC
+  rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n  1550.00000000 RIC  (due)
+  rric1q9dau9nuqlx6mnn77vw0kvu0jtcry7x3lmyj6gq  350.00000000 RIC  (due)
+wallet has 349.99000000 RIC spendable, not enough for rric1q9dau9nuqlx6mnn77vw0kvu0jtcry7x3lmyj6gq; paid next time
+paid 1550.00000000 RIC to rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n: 7a4c5f2e0bab296986f3494e4b1c1b8ad29be872985f61a0cb8c37b263e24d46
+transaction 7a4c5f2e0bab296986f3494e4b1c1b8ad29be872985f61a0cb8c37b263e24d46: 1 payments, fee 0.00022530 RIC
+--- 6 more blocks, then payouts again
+done: sent 7, accepted 7, rejected 0
+payment 7a4c5f2e0bab2969 to rric1qxp5t8470cu8sm2... confirmed at height 140
+block 39 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 40 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 41 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 42 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 43 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 44 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+block 45 credited (pplns, fee 0.00 %): 50.00000000 RIC over 1 miners (fee 0.00000000)
+tip 145; 45 blocks credited; 2 balances due (>= 1.0 RIC); owed in total 700.00000000 RIC
+  rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n  350.00000000 RIC  (due)
+  rric1q9dau9nuqlx6mnn77vw0kvu0jtcry7x3lmyj6gq  350.00000000 RIC  (due)
+wallet has 349.98977470 RIC spendable, not enough for rric1q9dau9nuqlx6mnn77vw0kvu0jtcry7x3lmyj6gq; paid next time
+paid 350.00000000 RIC to rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n: 08fe4e910135af3c6d2108e4e611628416da3b45fa11a66ac66cb8a2b2cdb659
+transaction 08fe4e910135af3c6d2108e4e611628416da3b45fa11a66ac66cb8a2b2cdb659: 1 payments, fee 0.00006270 RIC
+--- miners wallet (received by address) and ledger
+  rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n 1550.0 6
+  paid {'rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n': 1900.0}
+  balances {'rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n': 0.0, 'rric1q9dau9nuqlx6mnn77vw0kvu0jtcry7x3lmyj6gq': 350.0}
+  payments [('rric1qxp5t84', 1550.0, 'confirmed'), ('rric1qxp5t84', 350.0, 'pending')]
+  wallet locked after: True
+  "unlocked_until": 0,
+--- pool log (last lines) and stats
+1795421236 new block template: height 145 bits 00012000 (difficulty 288.00) txs 0 patterns [[0]]
+1795421236 BLOCK found by rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n.rig1 at height 145 id 5f54f50cd66c99ea773258fd3699048a6ecc11d409e1ac3cc3e7f411b6973ead
+1795421236 node ACCEPTED block 5f54f50cd66c99ea773258fd3699048a6ecc11d409e1ac3cc3e7f411b6973ead at height 145 (accepted)
+1795421237 new block template: height 146 bits 00012000 (difficulty 288.00) txs 0 patterns [[0]]
+1795421237 session 5 127.0.0.1:37804 closed (rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n.rig1)
+{'hashrate': 1.3363636363636364, 'accepted': 147, 'rejected': 0, 'stale': 30, 'blocks_submitted': 147, 'blocks_accepted': 145, 'share_k': 1, 'network_work_per_block': 1.0}
+[('rric1q9dau9n', 0.073, True, ['cpu']), ('rric1qxp5t84', 1.264, False, ['rig2', 'rig1'])]
+fund rric1q8nzr4z4mdml5wn2yyemzkp79lw03u4z2fhsunt
+done: sent 1, accepted 1, rejected 0
+  rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n  50.00000000 RIC  (due)
+wallet has 49.98971200 RIC spendable, not enough for rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n; paid next time
+paid 350.00000000 RIC to rric1q9dau9nuqlx6mnn77vw0kvu0jtcry7x3lmyj6gq: aef221549f569ca28d8f207d50a8a76d3cac58138bb2cb9ef97a701a8822cb08
+transaction aef221549f569ca28d8f207d50a8a76d3cac58138bb2cb9ef97a701a8822cb08: 1 payments, fee 0.00006070 RIC
+done: sent 6, accepted 6, rejected 0
+payment 08fe4e910135af3c to rric1qxp5t8470cu8sm2... confirmed at height 146
+tip 152; 52 blocks credited; 1 balances due (>= 1.0 RIC); owed in total 350.00000000 RIC
+  rric1q9dau9nuqlx6mnn77vw0kvu0jtcry7x3lmyj6gq 350.0 5
+  rric1qxp5t8470cu8sm2scux8a66qq24d69zh42ldk3n 1900.0 7
+  paid {'rric1qxp5t8470': 1900.0, 'rric1q9dau9nuq': 350.0} statuses ['confirmed', 'confirmed', 'pending']

@@ -1,0 +1,59 @@
+# Builds and tests riecoin-pool on every push (Linux); a tag v* also publishes the binary as a GitHub release.
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    container: rust:1.96-bookworm   # Debian 12: the Linux binary needs glibc 2.36 or later
+    steps:
+      - uses: actions/checkout@v7
+      - name: Python
+        run: apt-get update -qq && apt-get install -y -qq --no-install-recommends python3 >/dev/null
+      - name: Build
+        run: cargo build --release --locked
+      - name: Tests
+        run: |
+          cargo test --release --locked
+          python3 -m unittest -v test_payout
+      - name: Package
+        run: |
+          mkdir -p dist/riecoin-pool-linux-x86_64
+          cp target/release/riecoin-pool payout.py README.md LICENSE NOTICE dist/riecoin-pool-linux-x86_64/
+          cd dist
+          tar --owner=0 --group=0 -czf riecoin-pool-linux-x86_64.tar.gz riecoin-pool-linux-x86_64
+          sha256sum riecoin-pool-linux-x86_64.tar.gz > SHA256SUMS
+          sha256sum riecoin-pool-linux-x86_64/*
+          cat SHA256SUMS
+      - uses: actions/upload-artifact@v7
+        with:
+          name: riecoin-pool-binaries
+          path: |
+            dist/riecoin-pool-linux-x86_64.tar.gz
+            dist/SHA256SUMS
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: riecoin-pool-binaries
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" riecoin-pool-linux-x86_64.tar.gz SHA256SUMS \
+            --repo "$GITHUB_REPOSITORY" --title "riecoin-pool $GITHUB_REF_NAME" \
+            --notes "Built by GitHub Actions from commit $GITHUB_SHA (build log: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID). Check the download with: sha256sum -c SHA256SUMS"
