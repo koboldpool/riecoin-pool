@@ -8,6 +8,7 @@ shares are counted and paid.
 |---|---|
 | `riecoin-pool` | the pool server: rieMiner's stratum (PPLNS port and solo port), every share checked with the Stella rule, work from a stock Riecoin Core node |
 | `payout.py` | PPLNS payouts from the node's wallet; tracks every payment until it is deep in the chain |
+| `kobold_ledger.py` | crash-safe ledger for `payout.py` (keep it next to it): a lock, durable saves, dated copies, and each payment saved before it is sent, so a crash can't pay twice |
 | `examples/testminer.rs` | a small test client that speaks the pool's stratum |
 
 ## Mine on Kobold Pool
